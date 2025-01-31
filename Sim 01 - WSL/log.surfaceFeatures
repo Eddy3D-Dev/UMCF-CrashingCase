@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-1c9b5879390b
+Exec   : surfaceFeatures
+Date   : Jan 29 2025
+Time   : 21:57:11
+Host   : "DESKTOP-7UI3F9D"
+PID    : 17262
+I/O    : uncollated
+Case   : /home/alvarezdm/OpenFOAM/sim01
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeaturesDict
+
+Surface            : "buildings.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 364
+Vertices     : 241
+Bounding Box : (-257.94293 -285.87256 -2.7711167e-13) (279.08762 208.23997 47.548801)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 228
+    feature edges  : 346
+    of which
+        region edges   : 76
+        external edges : 241
+        internal edges : 29
+
+
+Final feature set:
+points      : 232
+edges       : 346
+boundingBox : (-257.94293 -285.87256 -2.7711167e-13) (279.08762 208.23997 47.548801)
+point classification :
+    convex feature points          :      118
+    concave feature points         :        1
+    mixed feature points           :      109
+    other (non-feature) points     :        4
+edge classification :
+    external (convex angle) edges  :      241
+    internal (concave angle) edges :       29
+    flat region edges              :        0
+    open edges                     :       76
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/buildings.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/alvarezdm/OpenFOAM/sim01/constant/extendedFeatureEdgeMesh/buildings"
+
+Writing featureEdgeMesh to "constant/triSurface/buildings.eMesh"
+
+ExecutionTime = 0 s  ClockTime = 0 s
+
+End
+

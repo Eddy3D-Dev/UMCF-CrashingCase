@@ -1,0 +1,60 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-1c9b5879390b
+Exec   : calcLAI -region air
+Date   : Jan 29 2025
+Time   : 22:05:23
+Host   : "DESKTOP-7UI3F9D"
+PID    : 20677
+I/O    : uncollated
+Case   : /home/alvarezdm/OpenFOAM/sim01
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+timeDirs: 1(0	0)
+Create mesh air for time = 0
+
+
+Reading g
+Gravity is = g [0 1 -2 0 0 0 0] (0 0 -9.81)
+Vertical vector : (-0 -0 1)
+Creating interpolation setup...
+
+Interpolation from fvMesh to Cartesian mesh...minCellSizeFactor = 10, minCellL = 7.1755637
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file meshes/polyMesh/polyMeshTetDecomposition/tetIndicesI.H at line 76
+    No base point for face 378019, 6(57776 176560 153391 178135 157679 97300), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file meshes/polyMesh/polyMeshTetDecomposition/tetIndicesI.H at line 76
+    No base point for face 239200, 4(57944 91508 122085 106073), produces a valid tet decomposition.
+ took 1.116639 second(s).
+done !!! 
+Interpolation from cartesian to rotated cartesian mesh...
+
+vegLocalCoarseCf 1932
+Solar ray direction 0, It took 0.199475 second(s).
+vegLocalCoarseCf 1932
+Solar ray direction 1, It took 0.096424 second(s).
+vegLocalCoarseCf 1932
+Solar ray direction 2, It took 0.092446 second(s).
+
+Writing fields: kcLAI boundary
+
+Writing fields: div qrsw
+
+Total time took: 2.649281 second(s).
+
+End
+

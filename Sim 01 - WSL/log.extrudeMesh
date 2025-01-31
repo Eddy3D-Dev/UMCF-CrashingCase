@@ -1,0 +1,47 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-1c9b5879390b
+Exec   : extrudeMesh
+Date   : Jan 29 2025
+Time   : 21:59:50
+Host   : "DESKTOP-7UI3F9D"
+PID    : 17287
+I/O    : uncollated
+Case   : /home/alvarezdm/OpenFOAM/sim01
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting extrudeModel linearNormal
+Extruding from surface using model linearNormal
+Flipping normals before extruding
+Not collapsing any edges after extrusion
+
+Extruding surfaceMesh read from file "constant/triSurface/buildings.stl.gz"
+
+Flipping faces.
+
+Extruding surface with :
+    points     : 241
+    faces      : 364
+    normals[0] : (0.50087401 -0.86552021 0)
+
+Mesh bounding box : (-257.94293 -285.87256 -2.7711167e-13) (279.08762 208.23997 47.548801)
+        with span : (537.03055 494.11253 47.548801)
+Merge distance    : 0
+
+Writing mesh to "constant/region0"
+
+End
+

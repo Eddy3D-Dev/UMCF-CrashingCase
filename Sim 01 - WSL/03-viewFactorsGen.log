@@ -1,0 +1,102 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-1c9b5879390b
+Exec   : viewFactorsGen -region vegetation
+Date   : Jan 29 2025
+Time   : 22:05:26
+Host   : "DESKTOP-7UI3F9D"
+PID    : 20678
+I/O    : uncollated
+Case   : /home/alvarezdm/OpenFOAM/sim01
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh vegetation for time = 0
+
+
+Creating single cell mesh...
+
+Created single cell mesh...
+
+Total number of coarse faces: 2023
+
+View factor patches included in the calculation : 8(0 1 2 3 4 5 6 7)
+
+Calculating view factors...
+Writing view factor matrix...
+F00: 0
+F01: 0.042456345
+F02: 0.070382184
+F03: 0.069761308
+F04: 0.33704314
+F05: 0.42289792
+F06: 0.088048451
+F07: 0.0070878142
+F10: 0.042456345
+F11: 2.4574534e-30
+F12: 0.070382132
+F13: 0.065879027
+F14: 0.32327826
+F15: 0.42289968
+F16: 0.11525649
+F17: 0.001572213
+F20: 0.081389817
+F21: 0.081389756
+F22: 2.8717495e-30
+F23: 0.027662883
+F24: 0.36666079
+F25: 0.41866746
+F26: 0.059573107
+F27: 0.00084394205
+F30: 0.080671837
+F31: 0.076182375
+F32: 0.027662883
+F33: 6.052016e-31
+F34: 0.31225559
+F35: 0.41867391
+F36: 0.11668679
+F37: 0.0042562052
+F40: 0.075506825
+F41: 0.072423117
+F42: 0.071032622
+F43: 0.060492789
+F44: 5.8565402e-61
+F45: 0.6189835
+F46: 0.10429625
+F47: 0.0089071531
+F50: 0.069436651
+F51: 0.069436939
+F52: 0.059444968
+F53: 0.059445883
+F54: 0.45366114
+F55: 1.3509949e-31
+F56: 0.2915089
+F57: 0.008144374
+F60: 0.029381211
+F61: 0.038426615
+F62: 0.017169619
+F63: 0.033635851
+F64: 0.15548674
+F65: 0.59198214
+F66: 0.12213221
+F67: 0.010804683
+F70: 0.049268432
+F71: 0.010980016
+F72: 0.0049285941
+F73: 0.02451587
+F74: 0.39112825
+F75: 0.35820526
+F76: 0.28107452
+F77: 0.047683829
+End
+
