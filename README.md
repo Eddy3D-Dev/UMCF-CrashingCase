@@ -92,6 +92,6 @@ The 05-umcf.log file in the SIM 01 - WSL folder contains the details for the suc
 
 ## UMCF compilation error
 
-This error shows up when attempting to compile UMCF via BlueCFD.
+This error shows up [when attempting to compile](https://github.com/SustainableUrbanSystemsLab/urbanMicroClimateFoam-BlueCFD/tree/of-org_v8.0-bluecfd) UMCF via BlueCFD.
 
 ![image](https://github.com/user-attachments/assets/891b1206-8fd1-4d49-a3a9-9bb1abd51aa8)
