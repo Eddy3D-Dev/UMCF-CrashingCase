@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-1c9b5879390b
+Exec   : faceAgglomerate -region vegetation
+Date   : Jan 29 2025
+Time   : 22:05:22
+Host   : "DESKTOP-7UI3F9D"
+PID    : 20676
+I/O    : uncollated
+Case   : /home/alvarezdm/OpenFOAM/sim01
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh vegetation for time = 0
+
+
+Agglomerating patch : left
+
+Agglomerating patch : right
+
+Agglomerating patch : back
+
+Agglomerating patch : front
+
+Agglomerating patch : top
+
+Agglomerating patch : bottom
+
+Agglomerating patch : buildings
+
+Agglomerating patch : air_to_vegetation
+
+Writing facesAgglomeration
+End
+

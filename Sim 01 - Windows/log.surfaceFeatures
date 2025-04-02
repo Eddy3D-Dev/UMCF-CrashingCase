@@ -1,0 +1,76 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : surfaceFeatures
+Date   : Jan 30 2025
+Time   : 19:29:46
+Host   : "DESKTOP-7UI3F9D"
+PID    : 3724
+I/O    : uncollated
+Case   : C:/Users/makel/Documents/ARQ/GT/Spring 2025/Special Problems/Sim 01 - Windows
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeaturesDict
+
+Surface            : "buildings.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 364
+Vertices     : 241
+Bounding Box : (-257.94293 -285.87256 -2.7711167e-13) (279.08762 208.23997 47.548801)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 228
+    feature edges  : 346
+    of which
+        region edges   : 76
+        external edges : 241
+        internal edges : 29
+
+
+Final feature set:
+points      : 232
+edges       : 346
+boundingBox : (-257.94293 -285.87256 -2.7711167e-13) (279.08762 208.23997 47.548801)
+point classification :
+    convex feature points          :      118
+    concave feature points         :        1
+    mixed feature points           :      109
+    other (non-feature) points     :        4
+edge classification :
+    external (convex angle) edges  :      241
+    internal (concave angle) edges :       29
+    flat region edges              :        0
+    open edges                     :       76
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/buildings.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "C:/Users/makel/Documents/ARQ/GT/Spring 2025/Special Problems/Sim 01 - Windows/constant/extendedFeatureEdgeMesh/buildings"
+
+Writing featureEdgeMesh to "constant/triSurface/buildings.eMesh"
+
+ExecutionTime = 0.039 s  ClockTime = 0 s
+
+End
+

@@ -1,0 +1,113 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : changeDictionary -region air
+Date   : Jan 30 2025
+Time   : 19:31:45
+Host   : "DESKTOP-7UI3F9D"
+PID    : 27328
+I/O    : uncollated
+Case   : C:/Users/makel/Documents/ARQ/GT/Spring 2025/Special Problems/Sim 01 - Windows
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+--> FOAM Warning : 
+changeDictionary has been superseded by foamDictionary and is now deprecated.
+
+Create time
+
+Create mesh air for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 
+7
+(
+left
+right
+back
+front
+bottom
+top
+buildings
+)
+
+Extracted patch groups:
+    group wall with patches 
+2
+(
+bottom
+buildings
+)
+
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 1(buildings)
+fieldDict:
+{
+    left
+    {
+        type            patch;
+        nFaces          690;
+        startFace       506061;
+    }
+    right
+    {
+        type            patch;
+        nFaces          690;
+        startFace       506751;
+    }
+    back
+    {
+        type            patch;
+        nFaces          590;
+        startFace       507441;
+    }
+    front
+    {
+        type            patch;
+        nFaces          590;
+        startFace       508031;
+    }
+    bottom
+    {
+        type            wall;
+        inGroups        List<word> 0();
+        nFaces          10134;
+        startFace       508621;
+    }
+    top
+    {
+        type            patch;
+        nFaces          4071;
+        startFace       518755;
+    }
+    buildings
+    {
+        type            mappedWall;
+        inGroups        List<word> 0();
+        nFaces          31226;
+        startFace       522826;
+        sampleMode      nearestPatchFace;
+        sampleRegion    buildings;
+        samplePatch     buildings_to_air;
+        offsetMode      uniform;
+        offset          ( 0 0 0 );
+    }
+}
+
+Writing modified boundary
+
+End
+

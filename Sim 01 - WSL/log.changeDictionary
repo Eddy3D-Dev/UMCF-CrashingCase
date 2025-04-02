@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-1c9b5879390b
+Exec   : changeDictionary -region buildings
+Date   : Jan 29 2025
+Time   : 21:59:50
+Host   : "DESKTOP-7UI3F9D"
+PID    : 17291
+I/O    : uncollated
+Case   : /home/alvarezdm/OpenFOAM/sim01
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+--> FOAM Warning : 
+changeDictionary has been superseded by foamDictionary and is now deprecated.
+
+Create time
+
+Create mesh buildings for time = 0
+
+Read dictionary changeDictionaryDict with replacements for dictionaries 1(boundary)
+Reading polyMesh/boundary file to extract patch names
+Loaded dictionary boundary with entries 
+3
+(
+sides
+buildings_to_air
+interior
+)
+
+Extracted patch groups:
+    group wall with patches 1(sides)
+Replacing entries in dictionary boundary
+Special handling of boundary as polyMesh/boundary file.
+Merging entries from 1(buildings_to_air)
+fieldDict:
+{
+    sides
+    {
+        type            wall;
+        inGroups        List<word> 0();
+        nFaces          760;
+        startFace       8356;
+    }
+    buildings_to_air
+    {
+        type            mappedWall;
+        nFaces          364;
+        startFace       9116;
+        sampleMode      nearestPatchFace;
+        sampleRegion    air;
+        samplePatch     buildings;
+        offsetMode      uniform;
+        offset          ( 0 0 0 );
+    }
+    interior
+    {
+        type            patch;
+        nFaces          364;
+        startFace       9480;
+    }
+}
+
+Writing modified boundary
+
+End
+

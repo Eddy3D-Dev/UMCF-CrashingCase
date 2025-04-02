@@ -1,0 +1,44 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : topoSet -region air
+Date   : Jan 30 2025
+Time   : 19:34:15
+Host   : "DESKTOP-7UI3F9D"
+PID    : 9852
+I/O    : uncollated
+Case   : C:/Users/makel/Documents/ARQ/GT/Spring 2025/Special Problems/Sim 01 - Windows
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh air for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created cellSet vegetation
+    Applying source surfaceToCell
+    Adding cells in relation to surface "constant/triSurface/vegetation.stl" ...
+    Marked inside/outside using surface intersection in = 1.789 s
+
+    cellSet vegetation now size 12134
+Created cellZoneSet vegetation
+    Applying source setToCellZone
+    Adding all cells from cellSet vegetation ...
+    cellZoneSet vegetation now size 12134
+End
+
