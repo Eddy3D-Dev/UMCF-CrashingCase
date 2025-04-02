@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d992baf4fba2a6edbbcabf4f26f50cf8161279094b03558429f6ecc08ad58901
-size 13084
-=======
 # UMCF-CrashingCase
 
 This repository contains an OpenFOAM - urbanMicroclimateFoam case we initially attempted to run on blueCFD interface. Then we attempted to run using WSL (Ubuntu 20.04 and OpenFOAM 8) and it worked.
